@@ -22,6 +22,7 @@ class Application
       if @@items.include?(add_term)
         @@cart << add_term
       else
+        resp.write "We don't have that item."
     else
       resp.write "Path Not Found"
     end
